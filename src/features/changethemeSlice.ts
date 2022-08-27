@@ -19,6 +19,6 @@ export const changethemeSlice = createSlice({
   },
 })
 
-export const { } = changethemeSlice.actions
+export const { incrementByAmount } = changethemeSlice.actions
 
 export default changethemeSlice.reducer
