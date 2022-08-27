@@ -10,11 +10,9 @@ const App:FC = () => {
 
 
   return (
-
     <div className="App">
-    Hello
+      Hello World
     </div>
-
   );
 }
 
