@@ -6,10 +6,26 @@
   width: 800px;
   margin-top: 40px;
   font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  
 }
 
 .App .main-content{
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-top: 40px;
+  padding: 20px;
+}
+
+.App .main-content .light{
+  color: rgb(243, 150, 11);
+  background-color: rgb(248, 248, 197);
+
+}
+
+.App .main-content .dark{
+  color: rgb(163, 99, 99);
+  background-color: rgb(5, 5, 5);
+
 }

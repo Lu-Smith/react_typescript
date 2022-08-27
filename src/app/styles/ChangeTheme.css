@@ -18,6 +18,7 @@
 .ChangeTheme button.dark-theme {
     background-color: rgb(5, 5, 5);
     color: rgb(163, 99, 99);
+    margin-right: 30px;
 }
 
 .ChangeTheme button:hover {

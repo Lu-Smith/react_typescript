@@ -13,12 +13,12 @@ export const changethemeSlice = createSlice({
   name: 'changetheme',
   initialState,
   reducers: {
-    incrementByAmount: (state, action: PayloadAction<string>) => {
+    changeTheme: (state, action: PayloadAction<string>) => {
       state.value = action.payload
-    },
+    }
   },
 })
 
-export const { incrementByAmount } = changethemeSlice.actions
+export const { changeTheme} = changethemeSlice.actions
 
 export default changethemeSlice.reducer
