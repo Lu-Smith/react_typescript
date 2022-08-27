@@ -6,12 +6,7 @@ import CowTypes from './app/components/CowTypes';
 import Footer from './app/components/Footer';
 
 
-
-
-
 const App:FC = () => {
-
-
 
   return (
     <div className="App">
