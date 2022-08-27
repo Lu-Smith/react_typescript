@@ -1,19 +1,33 @@
 import React, {FC} from 'react';
 import type { RootState } from '../store';
-import { useSelector} from 'react-redux';
+import { useDispatch, useSelector} from 'react-redux';
+import { removeType, addType } from '../../features/typesSlice';
 import "../styles/CowTypes.css";
 
-const CowTypes: FC = () => {
+interface Types {
+  id: number;
+  src: string;
+  name: string;
+  index: number;
+}
+
+const CowTypes: FC<Types> = ({src, name, id, index}) => {
 
   const changetheme = useSelector((state: RootState) => state.changetheme.value);
+  const dispatch = useDispatch();
 
+  function handleClick() {
+    dispatch(removeType(index));
+    dispatch(addType({src, name, id}));
+
+  }
   return (
     <div className='CowTypes'>
       <div className={changetheme}>
-         <h2>Type</h2>
-         <div>
-            <img src='https://lh3.googleusercontent.com/U76Rqh8XMN5mX69YHehblKxzDJYnXzM02DsOE8K2smcwQEZ5rs2a3p4VIJDsk5-p_oRjkVa62uzPsEmfJJxL10wOAT2xCV-AV7H207E=w600' alt='Flower Moo' />
-            <h5>Flower Moo</h5>
+    
+         <div onClick={handleClick}>
+            <img src={src} alt={name} />
+            <h5>{name}</h5>
          </div>
       </div>
     </div>
