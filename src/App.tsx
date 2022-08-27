@@ -16,7 +16,7 @@ const App:FC = () => {
   return (
     <div className="App">
       <ChangeTheme />
-      <div>
+      <div className='main-content'>
         <CowTypes />
         <CowCollection />
       </div>
