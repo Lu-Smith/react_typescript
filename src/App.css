@@ -10,14 +10,18 @@
   background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
   padding-top: 20px;
   border-radius: 20px;
-  
+}
+
+.App h1 {
+  color: white;
+  margin-top: 30px;
 }
 
 .App .main-content{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 40px;
+  margin-top: 20px;
   padding: 20px;
   
 }

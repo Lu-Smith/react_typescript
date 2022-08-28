@@ -26,6 +26,7 @@ const App:FC = () => {
   return (
     <div className="App">
       <ChangeTheme />
+      <h1>Cows are taking over the WORLD</h1>
       <div className='main-content'>
         <div className={changetheme}>
           <h2>Type</h2>
