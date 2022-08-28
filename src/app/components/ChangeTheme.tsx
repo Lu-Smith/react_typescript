@@ -12,7 +12,7 @@ const ChangeTheme: FC = () => {
     <div className='ChangeTheme'>
         <button onClick={() => dispatch(changeTheme("light"))} className='light-theme'>Light</button>
         <button onClick={() => dispatch(changeTheme("dark"))} className='dark-theme'>Dark</button>
-        <button onClick={() => dispatch(changeTheme(""))} className='original-theme'>Original</button>
+        <button onClick={() => dispatch(changeTheme("original"))} className='original-theme'>Original</button>
     </div>
   )
 }

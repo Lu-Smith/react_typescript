@@ -6,7 +6,7 @@ export interface ChangeThemeState {
 }
 
 const initialState: ChangeThemeState = {
-  value: "",
+  value: "original",
 }
 
 export const changethemeSlice = createSlice({

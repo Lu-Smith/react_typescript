@@ -1,25 +1,34 @@
 .CowTypes {
-    margin-right: 50px;
     text-align: center;
     padding: 30px 20px;
-    width: 40%;
+    width: 300px;
+    cursor: pointer;
 }
 
 .CowTypes img {
-    width: 50%;
-    padding-top: 20px;
+    width: 70%;
+    margin-top: 10px;
+    border-radius: 50%;
+    border: 3px solid #fcf9f9; ;
+    box-shadow: 1px 1px 1px rgb(5, 5, 5, 0.5);
 }
 
 .CowTypes h5 {
     font-family: 'DynaPuff', cursive;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px rgb(5, 5, 5, 0.5);
+    padding-bottom: 10px;
 }
 
 .CowTypes .light{
-    color: rgb(243, 150, 11);
-    background-color: rgb(248, 248, 197);
+    color:  #fcf9f9; 
 }
 
 .CowTypes .dark{
     color: rgb(78, 213, 247);
-    background-color: rgb(5, 5, 5);
+ }
+
+ .CowTypes .original{
+    color: black;
+    background: linear-gradient(108.1deg, rgb(167, 220, 225) 11.2%, rgb(217, 239, 242) 88.9%);
  }

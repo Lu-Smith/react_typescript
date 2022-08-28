@@ -21,12 +21,13 @@ interface Types {
 const App:FC = () => {
 
   const types = useSelector((state: RootState) => state.types.value);
+  const changetheme = useSelector((state: RootState) => state.changetheme.value);
 
   return (
     <div className="App">
       <ChangeTheme />
       <div className='main-content'>
-        <div>
+        <div className={changetheme}>
         <h2>Type</h2>
         {typesdata.map((typesdata:Types, index: number) => {
           return <CowTypes key={typesdata.id} src={typesdata.src} name={typesdata.name} index={index} id={typesdata.id}/>
