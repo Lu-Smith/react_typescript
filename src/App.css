@@ -3,7 +3,7 @@
 .App {
   text-align: center;
   margin: 0 auto;
-  width: 800px;
+  width: 1000px;
   margin-top: 40px;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
@@ -19,10 +19,15 @@
   justify-content: center;
   margin-top: 40px;
   padding: 20px;
+  
 }
 
 .App .main-content h2 {
   padding-top: 12px;
+}
+
+.App .collection-title {
+  width: 600px;
 }
 
 
@@ -30,17 +35,23 @@
   color: #fcf9f9; 
   background: #aece57; 
   border-radius: 20px;
+  border: 2px solid #fcf9f9;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .App .dark{
   color: rgb(78, 213, 247);
   background: rgb(5, 5, 5);
   border-radius: 20px;
+  border: 2px solid rgb(78, 213, 247);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .App .original{
   color: black;
   background: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
   border-radius: 20px;
+  border: 2px solid black;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 

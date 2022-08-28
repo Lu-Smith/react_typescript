@@ -1,11 +1,12 @@
-.CowTypes {
+.CowCollection {
     text-align: center;
     padding: 30px 20px;
-    width: 300px;
+    width: 600px; 
 }
 
-.CowTypes img {
-    width: 70%;
+
+.CowCollection img {
+    width: 50%;
     margin-top: 10px;
     border-radius: 50%;
     border: 3px solid #fcf9f9; ;
@@ -13,7 +14,7 @@
     cursor: pointer;
 }
 
-.CowTypes h5 {
+.CowCollection h5 {
     font-family: 'DynaPuff', cursive;
     font-size: 20px;
     text-shadow: 1px 1px 1px rgb(5, 5, 5, 0.5);
@@ -21,15 +22,15 @@
     cursor: pointer;
 }
 
-.CowTypes .light{
+.CowCollection .light{
     color:  #fcf9f9; 
 }
 
-.CowTypes .dark{
+.CowCollection .dark{
     color: rgb(78, 213, 247);
  }
 
- .CowTypes .original{
+ .CowCollection .original{
     color: black;
     background: linear-gradient(108.1deg, rgb(167, 220, 225) 11.2%, rgb(217, 239, 242) 88.9%);
- }
+}

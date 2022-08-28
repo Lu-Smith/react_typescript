@@ -28,21 +28,19 @@ const App:FC = () => {
       <ChangeTheme />
       <div className='main-content'>
         <div className={changetheme}>
-        <h2>Type</h2>
-        {typesdata.map((typesdata:Types, index: number) => {
+          <h2>Type</h2>
+          {typesdata.map((typesdata:Types, index: number) => {
           return <CowTypes key={typesdata.id} src={typesdata.src} name={typesdata.name} index={index} id={typesdata.id}/>
-        })}
-        
+          })}
         </div>
-        <div>
-        <h2>Collection</h2>
-        {types.map((types, index) => {
+        <div className={changetheme}>
+        <h2 className='collection-title'>Collection</h2>
+          {types.map((types, index) => {
           return <CowCollection key={types.id} src={types.src} name={types.name} id={types.id} index={index}/>
-        })}
-        
+          })}
         </div>
       </div>
-        <Footer />
+      <Footer />
     </div>
     
   );

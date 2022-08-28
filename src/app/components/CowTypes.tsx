@@ -24,7 +24,6 @@ const CowTypes: FC<Types> = ({src, name, id, index}) => {
   return (
     <div className='CowTypes'>
       <div className={changetheme}>
-    
          <div onClick={handleClick}>
             <img src={src} alt={name} />
             <h5>{name}</h5>
