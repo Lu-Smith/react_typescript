@@ -19,7 +19,7 @@ const CowCollection: FC<Types> = ({src, name, index }) => {
   return (
     <div className='CowCollection'>
       <div className={changetheme}>
-         <div onClick={() => dispatch(removeType(index))} className="chosen-collection">
+         <div onClick={() => dispatch(removeType(index))}>
             <img src={src} alt={name} />
             <h5>{name}</h5>
          </div>

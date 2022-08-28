@@ -34,7 +34,6 @@
   width: 600px;
 }
 
-
 .App .light{
   color: #fcf9f9; 
   background: #aece57; 
@@ -58,4 +57,5 @@
   border: 2px solid black;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
+
 

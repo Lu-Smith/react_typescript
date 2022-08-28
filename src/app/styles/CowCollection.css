@@ -4,9 +4,27 @@
     width: 600px; 
 }
 
+.CowCollection .light{
+    color:  #fcf9f9; 
+    width: 60%;
+    margin: 0 auto;
+}
+
+.CowCollection .dark{
+    color: rgb(78, 213, 247);
+    width: 60%;
+    margin: 0 auto;
+ }
+
+ .CowCollection .original{
+    color: black;
+    background: linear-gradient(108.1deg, rgb(167, 220, 225) 11.2%, rgb(217, 239, 242) 88.9%);
+    margin: 0 auto;
+    width: 60%;
+}
 
 .CowCollection img {
-    width: 50%;
+    width: 90%;
     margin-top: 10px;
     border-radius: 50%;
     border: 3px solid #fcf9f9; ;
@@ -22,15 +40,3 @@
     cursor: pointer;
 }
 
-.CowCollection .light{
-    color:  #fcf9f9; 
-}
-
-.CowCollection .dark{
-    color: rgb(78, 213, 247);
- }
-
- .CowCollection .original{
-    color: black;
-    background: linear-gradient(108.1deg, rgb(167, 220, 225) 11.2%, rgb(217, 239, 242) 88.9%);
-}

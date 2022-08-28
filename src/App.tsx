@@ -37,7 +37,7 @@ const App:FC = () => {
         <div className={changetheme}>
         <h2 className='collection-title'>Collection</h2>
           {types.map((types, index) => {
-          return <CowCollection key={types.id} src={types.src} name={types.name} id={types.id} index={index}/>
+          return <CowCollection key={types.id} src={types.src} name={types.name} id={types.id} index={index}/>    
           })}
         </div>
       </div>
