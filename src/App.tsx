@@ -22,9 +22,11 @@ const App:FC = () => {
       <div className='main-content'>
         <div className={changetheme}>
           <h2>Type</h2>
-          {typeschoice.map((typeschoice, index: number) => {
-          return <CowTypes key={typeschoice.id} src={typeschoice.src} name={typeschoice.name} index={index} id={typeschoice.id}/>
-          })}
+          <div className='typechoice-container'>
+            {typeschoice.map((typeschoice, index: number) => {
+            return <CowTypes key={typeschoice.id} src={typeschoice.src} name={typeschoice.name} index={index} id={typeschoice.id}/>
+            })}
+          </div>
         </div>
         <div className={changetheme}>
         <h2 className='collection-title'>Collection</h2>

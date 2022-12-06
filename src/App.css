@@ -58,4 +58,11 @@
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
+.App .typechoice-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
