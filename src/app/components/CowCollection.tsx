@@ -2,6 +2,7 @@ import React, {FC} from 'react';
 import type { RootState } from '../store';
 import { useDispatch, useSelector} from 'react-redux';
 import { removeType } from '../../features/typesSlice';
+import { addTypeChoice } from '../../features/typeschoiceSlice';
 import "../styles/CowCollection.css";
 
 interface Types {
@@ -18,6 +19,7 @@ const CowCollection: FC<Types> = ({src, name, id, index }) => {
 
   function handleClick() {
     dispatch(removeType(index));
+    dispatch(addTypeChoice({src, name, id}));
   }
 
   return (
