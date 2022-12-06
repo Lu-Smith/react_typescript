@@ -12,7 +12,6 @@
     background-color: #aece57; 
     color: #fcf9f9; 
     margin-right: 30px;
-    
 }
 
 .ChangeTheme button.dark-theme {
@@ -32,5 +31,22 @@
         padding: 9px 23px;
         font-size: 23px;
         box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .ChangeTheme button {
+        border-radius: 10px;
+        padding: 0px 20px;
+        font-size: 20px;
+        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .ChangeTheme button.light-theme {
+        margin-right: 10px;
+    }
+    
+    .ChangeTheme button.dark-theme {
+        margin-right: 10px;
     }
 }

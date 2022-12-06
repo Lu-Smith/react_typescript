@@ -49,3 +49,22 @@
         padding: 5px 0 10px 0;
     }
 }
+
+@media only screen and (max-width: 480px) {
+    .CowCollection {
+        padding: 10px 5px;
+        width: 250px; 
+    }
+
+    .CowCollection .light{
+        width: 80%;
+    }
+    
+    .CowCollection .dark{
+        width: 80%;
+     }
+    
+     .CowCollection .original{
+        width: 80%;
+    }
+}

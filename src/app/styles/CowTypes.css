@@ -49,3 +49,21 @@
         width: 130px;
     }
 }
+
+@media only screen and (max-width: 480px) {
+    .CowTypes .light{
+        width: 100px;
+    }
+    
+    .CowTypes .dark{
+        width: 100px;
+     }
+    
+     .CowTypes .original{
+        width: 100px;
+    }
+    .CowTypes h5 {
+        font-size: 12px;
+        padding-bottom: 8px;
+    }
+}

@@ -15,7 +15,6 @@
 
 .Footer a:hover {
     color: white;
-    font-size: 20px;
     border: 2px solid white;
     background-color: rgb(100, 100, 100);
 }
@@ -24,5 +23,21 @@
     .Footer {
         font-size: 17px;
         letter-spacing: 4px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .Footer {
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+
+    .Footer a {
+        font-size: 10px;
+        padding: 3px;
+    }
+    
+    .Footer a:hover {
+        border: 1px solid white;
     }
 }
