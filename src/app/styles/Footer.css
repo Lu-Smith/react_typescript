@@ -1,0 +1,21 @@
+.Footer {
+    color: white;
+    font-size: 18px;
+    letter-spacing: 5px;
+    padding: 10px;
+}
+
+.Footer a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 5px;
+    transition: all 200ms ease-in-out;
+}
+
+.Footer a:hover {
+    color: white;
+    font-size: 20px;
+    border: 2px solid white;
+    background-color: rgb(100, 100, 100);
+}
