@@ -2,9 +2,8 @@
 
 .App {
   text-align: center;
-  margin: 0 auto;
   width: 1200px;
-  margin-top: 40px;
+  margin: 40px auto;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
@@ -49,7 +48,7 @@
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
-.App .original{
+.App .original {
   color: black;
   background: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
   border-radius: 20px;
@@ -65,3 +64,39 @@
   flex-wrap: wrap;
 }
 
+@media only screen and (max-width: 1000px) {
+  .App {
+    width: 820px;
+    margin: 0 auto;
+    font-size: 18px;
+    padding-top: 15px;
+    border-radius: 0;
+  }
+  
+  .App h1 {
+    margin-top: 30px;
+    font-size: 28px;
+  }
+
+  .App h2 {
+    font-size: 22px;
+    margin-bottom: 5px;
+  }
+  
+  .App .main-content{
+    margin-top: 10px;
+    padding: 20px;
+  }
+  
+  .App .light{
+    border-radius: 15px;
+  }
+  
+  .App .dark{
+    border-radius: 15px;
+  }
+  
+  .App .original {
+    border-radius: 15px;
+  }
+}

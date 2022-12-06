@@ -36,3 +36,16 @@
     cursor: pointer;
 }
 
+@media only screen and (max-width: 1000px) {
+    .CowTypes .light{
+        width: 130px;
+    }
+    
+    .CowTypes .dark{
+        width: 130px;
+     }
+    
+     .CowTypes .original{
+        width: 130px;
+    }
+}
