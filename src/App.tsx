@@ -4,23 +4,15 @@ import ChangeTheme from './app/components/ChangeTheme';
 import CowCollection from './app/components/CowCollection';
 import CowTypes from './app/components/CowTypes';
 import Footer from './app/components/Footer';
-import * as data from './typesdata.json';
+
 import type { RootState } from './app/store';
 import { useSelector} from 'react-redux';
 
-const typesdataString = JSON.stringify(data);
-const typesdata = JSON.parse(typesdataString).typesdata;
-
-interface Types {
-  id: number;
-  src: string;
-  name: string;
-  index: number;
-}
 
 const App:FC = () => {
 
   const types = useSelector((state: RootState) => state.types.value);
+  const typeschoice = useSelector((state: RootState) => state.typeschoice.value);
   const changetheme = useSelector((state: RootState) => state.changetheme.value);
 
   return (
@@ -30,8 +22,8 @@ const App:FC = () => {
       <div className='main-content'>
         <div className={changetheme}>
           <h2>Type</h2>
-          {typesdata.map((typesdata:Types, index: number) => {
-          return <CowTypes key={typesdata.id} src={typesdata.src} name={typesdata.name} index={index} id={typesdata.id}/>
+          {typeschoice.map((typeschoice, index: number) => {
+          return <CowTypes key={typeschoice.id} src={typeschoice.src} name={typeschoice.name} index={index} id={typeschoice.id}/>
           })}
         </div>
         <div className={changetheme}>

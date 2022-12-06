@@ -11,15 +11,19 @@ interface Types {
   index: number;
 }
 
-const CowCollection: FC<Types> = ({src, name, index }) => {
+const CowCollection: FC<Types> = ({src, name, id, index }) => {
 
   const changetheme = useSelector((state: RootState) => state.changetheme.value);
   const dispatch = useDispatch();
 
+  function handleClick() {
+    dispatch(removeType(index));
+  }
+
   return (
     <div className='CowCollection'>
       <div className={changetheme}>
-         <div onClick={() => dispatch(removeType(index))}>
+         <div onClick={handleClick}>
             <img src={src} alt={name} />
             <h5>{name}</h5>
          </div>
