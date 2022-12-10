@@ -65,6 +65,13 @@
 }
 
 @media only screen and (max-width: 1000px) {
+
+  .App .collection-title {
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
   .App {
     width: 820px;
     margin: 0 auto;
@@ -76,6 +83,10 @@
   .App h1 {
     margin-top: 30px;
     font-size: 28px;
+  }
+
+  .App .collection-title {
+    width: 400px;
   }
 
   .App h2 {
@@ -101,6 +112,16 @@
   }
 }
 
+@media only screen and (max-width: 820px) {
+
+  .App {
+    width: 490px;
+  }
+
+  .App .collection-title {
+    width: 300px;
+  }
+}
 
 @media only screen and (max-width: 480px) {
   .App {

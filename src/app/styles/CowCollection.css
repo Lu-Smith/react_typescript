@@ -41,7 +41,19 @@
     cursor: pointer;
 }
 
+@media only screen and (max-width: 1200px) {
+
+    .CowCollection {
+        width: 500px; 
+    }
+}
+
 @media only screen and (max-width: 1000px) {
+
+    .CowCollection {
+        width: 400px; 
+    }
+
     
     .CowCollection h5 {
         font-size: 18px;
